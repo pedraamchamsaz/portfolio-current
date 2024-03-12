@@ -1,0 +1,337 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+  
+  /* html {
+    scroll-snap-type: y mandatory;
+  } */
+
+body {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  scroll-snap-align: start;
+}
+
+#nav, #menu-btn {
+    font-family: "Bad Robot";
+}
+
+nav {
+  z-index: 2;
+  cursor: pointer
+}
+
+ul {
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  transform-origin: right;
+  background-color: black;
+}
+
+span:hover + ul {
+  /* transform: scaleX(1); */
+  transform-origin: right;
+}
+
+li {
+  border-radius: 12px;
+  padding: 5px;
+  transition-property: color;
+  transition-duration: 0.3s;
+}
+
+li:hover {
+  background-color: white;
+  color: black;
+}
+
+#location, #subtitle {
+    font-family: "Press Start 2P";
+}
+
+@font-face {
+    font-family: "CF Glitch City";
+    src: url(CfGlitchCityRegular-L1vZ);
+}
+
+
+.title {
+    font-family: "Rubik Glitch";
+    pointer-events: none;
+}
+
+@font-face {
+    font-family: "Glitch Goblin";
+    src: url(GlitchGoblin-2O87v);
+}
+
+@font-face {
+    font-family: "Bad Robot";
+    src: url(BadRobot-mLzZ2);
+}
+
+@font-face {
+    font-family: "Hatchway";
+    src: url(HatchwayUltraExpanded-Medium);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Hatchway";
+    src: url(HatchwayUltraExpanded-SemiBold);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Hatchway";
+    src: url(HatchwayUltraExpanded-Bold);
+    font-weight: 700;
+}
+
+@font-face  {
+    font-family: "Bungee Shade", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    src: url(BungeeShade-Regular)
+  }
+
+#name {
+    font-family: "Bungee Shade"
+}
+  
+
+#intro-text, h4, #chat, .form-labels {
+    font-family: "Glitch Goblin";
+}
+
+/* h4 {
+    color: white;
+    font-family: "Glitch Goblin";
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+} */
+
+.project, .lang-btn, h5, .date {
+    font-family: "Hatchway";
+    font-weight: 700;
+}
+
+.cv-btn, .job-desc, #send {
+    font-family: "Hatchway";
+    font-weight: 600;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Initially hidden */
+    width: 250px;
+    height: 100vh;
+    background-color: #333;
+    transition: left 0.3s ease;
+    padding-top: 60px; /* Height of the fixed navbar */
+  }
+  
+.sidebar ul {
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+
+.sidebar ul li {
+padding: 10px 20px;
+color: #fff;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+.sidebar ul li:hover {
+background-color: #555;
+}
+
+.content {
+margin-left: 250px; /* Adjust content margin to accommodate the sidebar */
+transition: margin-left 0.3s ease;
+padding: 20px;
+}
+
+#carouselDiv {
+    transition: width 0.5s ease-in-out;
+  }
+#carouselDiv:hover {
+    width: 500px;
+  }
+
+h5 {
+    transition: opacity 0.5s ease-in-out;
+}
+/* h5:hover {
+    opacity: 0
+} */
+
+.project-text {
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+}
+.project-text:hover {
+    opacity: 1.0;
+}
+
+.prjct-title {
+  transition: opacity 0.5s ease-in-out;
+  transition-delay: 0.5s;
+}
+.prjct:hover .prjct-title {
+  opacity: 0;
+}
+
+.prjct-text {
+  font-family: "Hatchway";
+  font-weight: 700;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  transition-delay: 0.5s;
+}
+.prjct:hover .prjct-text {
+  opacity: 1.0;
+}
+
+.prjct-text h5 {
+  font-family: "Hatchway";
+  font-weight: 500;
+}
+
+.prjct-text p {
+  font-family: "Hatchway";
+  font-weight: 600;
+  line-height: 2rem;
+}
+/* 
+#personal-intro, #projects, #cv, #form {
+  opacity: 0;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+  will-change: opacity, visibility;
+}
+#personal-intro.is-visible, #projects.is-visible, #cv.is-visible, #form.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+} */
+--------------------------
+
+/* body{ 
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    background: #131313;
+    color: #fff;
+    font-size: 96px;
+    font-family: 'Fira Mono', monospace;
+    letter-spacing: -7px;
+  } */
+
+#name {
+    animation: glitch 1s linear infinite;
+  }
+  
+  @keyframes glitch{
+    2%,64%{
+      transform: translate(2px,0) skew(0deg);
+    }
+    4%,60%{
+      transform: translate(-2px,0) skew(0deg);
+    }
+    62%{
+      transform: translate(0,0) skew(5deg); 
+    }
+  }
+  
+  #name:before,
+  #name:after{
+    content: attr(title);
+    position: absolute;
+    left: 0;
+  }
+  
+  #name:before{
+    animation: glitchTop 1s linear infinite;
+    /* clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%); */
+  }
+  
+  @keyframes glitchTop{
+    2%,64%{
+      transform: translate(2px,-2px);
+    }
+    4%,60%{
+      transform: translate(-2px,2px);
+    }
+    62%{
+      transform: translate(13px,-1px) skew(-13deg); 
+    }
+  }
+  
+  #name:after{
+    animation: glitchBotom 1.5s linear infinite;
+    /* clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%); */
+  }
+  
+  @keyframes glitchBotom{
+    2%,64%{
+      transform: translate(-2px,0);
+    }
+    4%,60%{
+      transform: translate(-2px,0);
+    }
+    62%{
+      transform: translate(-22px,5px) skew(21deg); 
+    }
+  }
+  
+/* .wheel {
+  animation-name: wheel;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+  @keyframes wheel {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+ }
+
+ .cabin {
+  animation: cabins 10s ease-in-out infinite;
+}
+
+@keyframes cabins {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-90deg);
+  }
+  50% {
+    transform: rotate(-180deg);
+  }
+  75% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+} */
