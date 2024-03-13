@@ -2,7 +2,8 @@
 @tailwind components;
 @tailwind utilities;
   
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Bruno+Ace+SC&family=Press+Start+2P&display=swap');
+
 
 body {
   scroll-behavior: smooth;
@@ -15,7 +16,7 @@ section {
 }
 
 #nav, #menu-btn {
-    font-family: "Bad Robot";
+    font-family: "Bad Robot", "Press Start 2P";
 }
 
 nav {
@@ -103,7 +104,7 @@ li:hover {
   
 
 #intro-text, h4, #chat, .form-labels {
-    font-family: "Glitch Goblin";
+    font-family: "Glitch Goblin", "Bruno Ace SC";
 }
 
 /* h4 {
