@@ -55,7 +55,7 @@ li:hover {
 
 @font-face {
     font-family: "CF Glitch City";
-    src: local('./fonts/cf-glitch-city-font/CfGlitchCityRegular-L1vZ.ttf');
+    src: url(CfGlitchCityRegular-L1vZ);
 }
 
 
@@ -66,29 +66,29 @@ li:hover {
 
 @font-face {
     font-family: "Glitch Goblin";
-    src: local('./fonts/glitch-goblin-font/GlitchGoblin-2O87v.ttf');
+    src: url(GlitchGoblin-2O87v);
 }
 
 @font-face {
     font-family: "Bad Robot";
-    src: local('./fonts/bad-robot-font/BadRobot-mLzZ2.ttf');
+    src: url(BadRobot-mLzZ2);
 }
 
 @font-face {
     font-family: "Hatchway";
-    src: local('./fonts/HatchwayUltraExpanded-Medium.ttf');
+    src: url(HatchwayUltraExpanded-Medium);
     font-weight: 500;
 }
 
 @font-face {
     font-family: "Hatchway";
-    src: local('./fonts/HatchwayUltraExpanded-SemiBold.ttf');
+    src: url(HatchwayUltraExpanded-SemiBold);
     font-weight: 600;
 }
 
 @font-face {
     font-family: "Hatchway";
-    src: local('./fonts/HatchwayUltraExpanded-Bold.ttf');
+    src: url(HatchwayUltraExpanded-Bold);
     font-weight: 700;
 }
 
