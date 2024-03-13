@@ -2,9 +2,7 @@
 @tailwind components;
 @tailwind utilities;
   
-  /* html {
-    scroll-snap-type: y mandatory;
-  } */
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 
 body {
   scroll-behavior: smooth;
@@ -116,12 +114,12 @@ li:hover {
 } */
 
 .project, .lang-btn, h5, .date {
-    font-family: "Hatchway";
+    font-family: "Hatchway", "Audiowide";
     font-weight: 700;
 }
 
 .cv-btn, .job-desc, #send {
-    font-family: "Hatchway";
+    font-family: "Hatchway", "Audiowide";
     font-weight: 600;
 }
 
@@ -190,7 +188,7 @@ h5 {
 }
 
 .prjct-text {
-  font-family: "Hatchway";
+  font-family: "Hatchway", "Audiowide";
   font-weight: 700;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
@@ -201,12 +199,12 @@ h5 {
 }
 
 .prjct-text h5 {
-  font-family: "Hatchway";
+  font-family: "Hatchway", "Audiowide";
   font-weight: 500;
 }
 
 .prjct-text p {
-  font-family: "Hatchway";
+  font-family: "Hatchway", "Audiowide";
   font-weight: 600;
   line-height: 2rem;
 }
