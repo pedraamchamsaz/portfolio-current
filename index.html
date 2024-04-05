@@ -38,7 +38,7 @@
 
 <body class="bg-zinc-900 h-full w-screen">
 
-    <button id="menu-btn" class="text-white fixed text-2xl top-8 left-6 z-10">Menu</button>
+    <button id="menu-btn" class="text-white fixed text-2xl 2xl:text-4xl top-8 left-6 z-10">Menu</button>
 
     <nav id="nav" class="fixed right-0 text-white w-1/2 md:w-1/3 lg:w-1/4">
         <ul id="menu" class="flex flex-col gap-4 text-lg p-5 h-screen absolute right-0">
@@ -51,19 +51,31 @@
     </nav>
 
     <section id="home" class="max-w-screen w-screen h-screen">         
-        <div class="w-4/5 h-4/5 mx-auto text-center pt-16">
-            <h1 id="name" class="title text-6xl sm:text-8xl md:text-9xl pt-44 lg:pt-32 text-white mx-auto" title="PEDRAAM CHAMSAZ"></h1>
-            <h2 id="subtitle" class="text-lg md:text-xl mt-44 sm:mt-72 text-white/75">FULL STACK WEB DEVELOPER</h2>
+        <div class="w-4/5 h-4/5 mx-auto text-center 2xl:pt-16">
+            <h1 id="name" class="px-auto relative title text-5xl sm:text-8xl md:text-8xl xl:text-9xl 2xl:text-[9rem] pt-44 text-white mx-auto" title="PEDRAAM CHAMSAZ"></h1>
+            <h2 id="subtitle" class="text-lg md:text-xl 2xl:text-4xl mt-32 sm:mt-60 xl:mt-80 text-white/75">FULL STACK WEB DEVELOPER</h2>
+            <div class="flex flex-wrap justify-center gap-7 mt-[20%] sm:mt-[3%] 2xl:mt-20">
+                <img class="h-10 w-10 2xl:w-20 2xl:h-20 hover:scale-125 transition" src="/svg/html-5.svg" alt="">
+                <img class="h-10 w-10 2xl:w-20 2xl:h-20 hover:scale-125 transition" src="/svg/css-3.svg" alt="">
+                <img class="h-10 w-10 2xl:w-20 2xl:h-20 hover:scale-125 transition" src="/svg/javascript.svg" alt="">
+                <img class="h-10 w-10 2xl:w-20 2xl:h-20 hover:scale-125 transition" src="/svg/react.svg" alt="">
+                <img class="h-10 w-10 2xl:w-20 2xl:h-20 hover:scale-125 transition" src="/svg/nextjs-icon.svg" alt="">
+                <img class="h-10 w-10 2xl:w-20 2xl:h-20 hover:scale-125 transition" src="/svg/tailwindcss-icon.svg" alt="">
+                <img class="h-10 w-10 2xl:w-20 2xl:h-20 hover:scale-125 transition" src="/svg/nodejs-icon.svg" alt="">
+                <img class="h-10 w-10 2xl:w-20 2xl:h-20 hover:scale-125 transition" src="/svg/mongodb-icon.svg" alt="">
+                <img class="h-10 w-10 2xl:w-20 2xl:h-20 hover:scale-125 transition" src="/svg/typescript-icon.svg" alt="">
+                <img class="h-10 w-10 2xl:w-20 2xl:h-20 hover:scale-125 transition" src="/svg/angular-icon.svg" alt="">
+            </div>
         </div>
     </section>
 
     <section id="personal-intro" class="w-screen h-screen flex items-center relative md:pt-44 lg:pt-20 z-9">
         <div class="xl:w-2/5 h-4/5 ml-20 p-5 text-white">
-            <h2 class="title text-5xl">WHO AM I?</h2>
-            <p id="intro-text" class="text-lg md:text-2xl mt-5 leading-9">I’m a full-stack web developer based in London. I have a passion for turning ideas into reality through code. When I’m not staring at VS Code you can find me staring at movie screens, messing up simple recipes, or training to complete the world’s slowest half-marathon.</p>
+            <h2 class="title text-5xl 2xl:text-7xl">WHO AM I?</h2>
+            <p id="intro-text" class="text-lg md:text-2xl 2xl:text-4xl mt-5 leading-9">I’m a full-stack web developer based in London. I have a passion for turning ideas into reality through code. When I’m not staring at VS Code you can find me staring at movie screens, messing up simple recipes, or training to complete the world’s slowest half-marathon.</p>
         </div>
         <div class="flex justify-end w-2/5 ml-10">
-            <div class="wheel absolute top-28 w-96 h-96 hidden xl:flex">
+            <div class="wheel absolute top-28 2xl:top-52 w-96 h-96 hidden xl:flex">
                 <img src="svg/nodejs-icon.svg" class="w-1/5 h-1/5 absolute origin-top -right-20 top-40 animate-cabin-spin"></img>
                 <img src="svg/javascript.svg" class="cabin w-1/5 h-1/5 absolute -left-8"></img>
                 <img src="svg/html-5.svg" class="cabin w-1/5 h-1/5 absolute left-20 -top-16"></img>
@@ -79,7 +91,8 @@
     </section>
 
     <section id="projects" class="w-full h-screen pb-8">
-        <h2 class="title text-white text-center text-5xl px-2 pt-20 lg:pt-16">WHAT DO I DO?</h2>
+        <h2 class="title text-white text-center text-5xl px-2 pt-20 lg:pt-10 2xl:text-7xl">WHAT DO I DO?</h2>
+        <h3 class="text-white text-center pt-5">Hover over the cards for more info</h3>
         <div
         id="carouselExampleCaptions"
         class="relative flex justify-center items-center h-4/5 gap-10"
@@ -157,7 +170,7 @@
         <!--Carousel item 1-->
         <div
         id="carouselDiv"
-        class="rounded-[36px] relative w-4/5 mx-auto sm:w-96 h-96 max-w-96 max-h-96 overflow-hidden after:clear-both after:block after:content-[''] transition">
+        class="rounded-[36px] relative w-4/5 mx-auto h-[400px] 2xl:h-[500px] overflow-hidden after:clear-both after:block after:content-[''] transition">
         <!--1-->
         <div
             class="card relative float-left -mr-[100%] w-full h-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
@@ -192,25 +205,25 @@
             data-te-carousel-item
             style="backface-visibility: hidden">
             <img
-            src="gignite2.png"
+            src="gignite3.png"
             class="block w-full h-full object-cover opacity-20"
             alt="..." />
             <div
                 class="prjct absolute top-0 text-center text-white md:block w-full h-full">
-                    <h5 class="prjct-title text-xl pt-44">Gignite</h5>
+                    <h5 class="prjct-title text-xl xl:text-2xl pt-44 2xl:pt-60">Gignite</h5>
                     <div class="prjct-text">
-                        <h5 class="absolute text-xl top-10 left-5">Gignite</h5>
+                        <h5 class="absolute text-xl xl:text-2xl top-10 left-5">Gignite</h5>
                         <div class="flex absolute top-10 right-10 gap-5">
                             <a href="https://github.com/pedraamchamsaz/GigApp-Project" target="_blank"><img class="github h-8 w-8 hover:scale-110 transition border bg-white rounded-full" src="github-icon.svg" alt="Github Icon"></a>
                             <a href="https://gig-app-project.vercel.app/" target="_blank"><button class="border rounded-[12px] p-2 text-xs hover:scale-110 transition ">Live</button></a>
                         </div>
-                        <p class="absolute top-24 left-5 text-sm pr-2 w-[450px] h-[200px] text-left">A full-stack web app that finds nearby gigs based on your current or selected location. Gignite uses both the Ticketmaster API and Google Maps API to populate gig data onto the map. The app has full CRUD functionality and uses a JWT login authorisation system.</p>
+                        <p class="absolute top-24 left-5 text-xs sm:text-sm xl:text-base pr-4 xl:pr-10 w-[300px] sm:w-[450px] h-[200px] text-left">A full-stack web app that finds nearby gigs based on your current or selected location. Gignite uses both the Ticketmaster API and Google Maps API to populate gig data onto the map. The app has full CRUD functionality and uses a JWT login authorisation system.</p>
                         <div class="lang-btn absolute bottom-8 flex pl-5 justify-start gap-5 opacity-70">
-                            <div class="inline h-5 w-fit rounded-xl text-xs">Next.js</div>
-                            <div class="inline h-5 w-fit rounded-xl text-xs">Tailwind CSS</div>
-                            <div class="inline h-5 w-fit rounded-xl text-xs">MongoDB</div>
-                            <div class="inline h-5 w-fit rounded-xl text-xs">Express</div>
-                            <div class="inline h-5 w-fit rounded-xl text-xs">Node.js</div>
+                            <div class="inline h-5 w-fit rounded-xl text-xs xl:text-lg">Next.js</div>
+                            <div class="inline h-5 w-fit rounded-xl text-xs xl:text-lg">Tailwind CSS</div>
+                            <div class="inline h-5 w-fit rounded-xl text-xs xl:text-lg">MongoDB</div>
+                            <div class="inline h-5 w-fit rounded-xl text-xs xl:text-lg">Express</div>
+                            <div class="inline h-5 w-fit rounded-xl text-xs xl:text-lg">Node.js</div>
                         </div>
                     </div>
             </div>
@@ -267,22 +280,22 @@
             data-te-carousel-item
             style="backface-visibility: hidden">
             <img
-            src="weather2.png"
+            src="weather3.png"
             class="block w-full h-full object-cover opacity-50"
             alt="..." />
             <div
                 class="prjct absolute top-0 text-center text-white md:block w-full h-full">
-                    <h5 class="prjct-title text-xl pt-44">Weather App</h5>
+                    <h5 class="prjct-title text-xl xl:text-2xl pt-44 2xl:pt-60">Weather App</h5>
                     <div class="prjct-text">
-                        <h5 class="absolute text-xl top-10 left-5">Weather App</h5>
+                        <h5 class="absolute text-xl xl:text-2xl top-10 left-5">Weather App</h5>
                         <div class="flex absolute top-10 right-10 gap-5">
                             <a href="https://github.com/pedraamchamsaz/weather-app" target="_blank"><img class="github h-8 w-8 hover:scale-110 transition border bg-white rounded-full" src="github-icon.svg" alt="Github Icon"></a>
                             <a href="https://weather-app-tau-vert.vercel.app/" target="_blank"><button class="border rounded-[12px] p-2 text-xs hover:scale-110 transition ">Live</button></a>
                         </div>
-                        <p class="absolute top-24 left-5 text-sm pr-2 w-[450px] h-[200px] text-left">A live weather app which connects to the OpenWeatherMap API. Detects your current location and provides hourly and daily weather forecasts, with times updated to the user's timezone. Users can search other locations and select between Celsius or Fahrenheit.</p>
+                        <p class="absolute top-24 left-5 text-xs sm:text-sm xl:text-base pr-4 xl:pr-10 w-[350px] sm:w-[450px] h-[200px] text-left">A live weather app which connects to the OpenWeatherMap API. Detects your current location and provides hourly and daily weather forecasts, with times updated to the user's timezone. Users can search other locations and select between Celsius or Fahrenheit.</p>
                         <div class="lang-btn absolute bottom-8 flex pl-5 justify-start gap-5 opacity-70">
-                            <div class="inline h-5 w-fit rounded-xl text-xs">Next.js</div>
-                            <div class="inline h-5 w-fit rounded-xl text-xs">Tailwind CSS</div>
+                            <div class="inline h-5 w-fit rounded-xl text-xs xl:text-lg">Next.js</div>
+                            <div class="inline h-5 w-fit rounded-xl text-xs xl:text-lg">Tailwind CSS</div>
                         </div>
                     </div>
             </div>
@@ -344,18 +357,18 @@
             alt="..." />
             <div
                 class="prjct absolute top-0 text-center text-white md:block w-full h-full">
-                    <h5 class="prjct-title text-xl pt-44">Text-Based Adventure Game</h5>
+                    <h5 class="prjct-title text-xl xl:text-2xl pt-44 2xl:pt-60">Text-Based Adventure Game</h5>
                     <div class="prjct-text">
-                        <h5 class="absolute text-xl top-10 left-5">Text-Based Adventure Game</h5>
+                        <h5 class="absolute text-xl xl:text-2xl top-10 left-5">Text-Based Adventure Game</h5>
                         <div class="flex absolute top-10 right-7 gap-5">
                             <a href="https://github.com/pedraamchamsaz/OOP-game" target="_blank"><img class="github h-8 w-8 hover:scale-110 transition border bg-white rounded-full" src="github-icon.svg" alt="Github Icon"></a>
                             <a href="https://pedraamchamsaz.github.io/OOP-game/" target="_blank"><button class="border rounded-[12px] p-2 text-xs hover:scale-110 transition ">Live</button></a>
                         </div>
-                        <p class="absolute top-24 left-5 text-sm pr-2 w-[450px] h-[200px] text-left">A fun text-based game designed to demonstrate Object Oriented Programming principles. Characters, rooms and items are created as classes and linked using object methods. Story and design are all my own original work.</p>
+                        <p class="absolute top-24 left-5 text-xs sm:text-sm xl:text-base pr-4 xl:pr-10 w-[350px] sm:w-[450px] h-[200px] text-left">A fun text-based game designed to demonstrate Object Oriented Programming principles. Characters, rooms and items are created as classes and linked using object methods. Story and design are all my own original work.</p>
                         <div class="lang-btn absolute bottom-8 flex pl-5 justify-start gap-5 opacity-70">
-                            <div class="inline h-5 w-fit rounded-xl text-xs">HTML</div>
-                            <div class="inline h-5 w-fit rounded-xl text-xs">Tailwind CSS</div>
-                            <div class="inline h-5 w-fit rounded-xl text-xs">JavaScript</div>
+                            <div class="inline h-5 w-fit rounded-xl text-xs xl:text-lg">HTML</div>
+                            <div class="inline h-5 w-fit rounded-xl text-xs xl:text-lg">Tailwind CSS</div>
+                            <div class="inline h-5 w-fit rounded-xl text-xs xl:text-lg">JavaScript</div>
                         </div>
                     </div>
             </div>
@@ -366,23 +379,23 @@
             data-te-carousel-item
             style="backface-visibility: hidden">
             <img
-            src="quiz2.png"
+            src="quiz3.png"
             class="block w-full h-full object-cover opacity-10"
             alt="..." />
                 <div
                 class="prjct absolute top-0 text-center text-white md:block w-full h-full">
-                    <h5 class="prjct-title text-xl pt-44">Movie Quiz</h5>
+                    <h5 class="prjct-title text-xl xl:text-2xl pt-44 2xl:pt-60">Movie Quiz</h5>
                     <div class="prjct-text">
-                        <h5 class="absolute text-xl top-10 left-5">Movie Quiz</h5>
+                        <h5 class="absolute text-xl xl:text-2xl top-10 left-5">Movie Quiz</h5>
                         <div class="flex absolute top-10 right-10 gap-5">
                             <a href="https://github.com/pedraamchamsaz/quiz-app" target="_blank"><img class="github h-8 w-8 hover:scale-110 transition border bg-white rounded-full" src="github-icon.svg" alt="Github Icon"></a>
-                            <a href="https://pedraamchamsaz.github.io/quiz-app/" target="_blank"><button class="border rounded-[12px] p-2 text-xs hover:scale-110 transition ">Live</button></a>
+                            <a href="https://pedraamchamsaz.github.io/movie-quotes-quiz/" target="_blank"><button class="border rounded-[12px] p-2 text-xs hover:scale-110 transition ">Live</button></a>
                         </div>
-                        <p class="absolute top-24 left-5 text-sm pr-2 w-[450px] h-[200px] text-left">A movie quotes quiz using vanilla HTML, CSS and JavaScript. The app is responsive and contains a leaderboard where high scores can be saved in, and retrieved from, local storage.</p>
+                        <p class="absolute top-24 left-5 text-xs sm:text-sm xl:text-base pr-4 xl:pr-10 w-[350px] sm:w-[450px] h-[200px] text-left">A movie quotes quiz using vanilla HTML, CSS and JavaScript. The app is responsive and contains a leaderboard where high scores can be saved in, and retrieved from, local storage.</p>
                         <div class="lang-btn absolute bottom-8 flex pl-5 justify-start gap-5 opacity-70">
-                            <div class="inline h-5 w-fit rounded-xl text-xs">HTML</div>
-                            <div class="inline h-5 w-fit rounded-xl text-xs">CSS</div>
-                            <div class="inline h-5 w-fit rounded-xl text-xs">JavaScript</div>
+                            <div class="inline h-5 w-fit rounded-xl text-xs xl:text-lg">HTML</div>
+                            <div class="inline h-5 w-fit rounded-xl text-xs xl:text-lg">CSS</div>
+                            <div class="inline h-5 w-fit rounded-xl text-xs xl:text-lg">JavaScript</div>
                         </div>
                     </div>
                 </div>
@@ -469,39 +482,39 @@
         </div>      
     </section>
 
-    <section id="cv" class="w-screen h-screen pt-32 md:pt-20 lg:pt-16 text-white relative">
-        <h2 class="title text-center text-5xl px-4">WHERE HAVE I WORKED?</h2>
+    <section id="cv" class="w-screen h-screen pt-20 lg:pt-16 text-white relative">
+        <h2 class="title text-center text-5xl px-4 2xl:text-7xl">WHERE HAVE I WORKED?</h2>
         <div id="cv-container" class="pl-5 mt-7 h-4/5 w-full flex flex-col gap-4 md:gap-2 md:pr-20">
             <div id="job-1" class="md:h-1/3 w-full flex">
                 <div class="h-full w-1/2 pr-4 pt-2">
-                    <p class="date text-right text-base">Mar 2023 - Sep 2023</p>
+                    <p class="date text-right text-base 2xl:text-2xl">Mar 2023 - Sep 2023</p>
                 </div>
                 <div class="h-full w-2/3 md:w-1/2 pl-4 pt-2 pr-6">
-                    <h5 class="text-md font-bold">Business Data Analyst | Irish Water (Contract)</h5>
-                    <p class="job-desc text-xs md:text-sm mt-2 hidden sm:flex">Performed trend analysis, built dashboards, tracked KPIs and generated insights into customer behaviour. Designed and led multiple projects which resulted in over €5m in debt reduction.</p>
+                    <h5 class="text-md font-bold 2xl:text-2xl">Business Data Analyst | Irish Water (Contract)</h5>
+                    <p class="job-desc text-xs md:text-sm mt-2 hidden sm:flex 2xl:text-xl">Performed trend analysis, built dashboards, tracked KPIs and generated insights into customer behaviour. Designed and led multiple projects which resulted in over €5m in debt reduction.</p>
                 </div>
             </div>
             <div id="job-2" class="md:h-1/3 w-full flex">
                 <div class="h-full w-1/2 pr-4 pt-2">
-                    <p class="date text-right text-base">Mar 2022 - Mar 2023</p>
+                    <p class="date text-right text-base 2xl:text-2xl">Mar 2022 - Mar 2023</p>
                 </div>
                 <div class="h-full w-2/3 md:w-1/2 pl-4 pt-2 pr-6">
-                    <h5 class="text-md font-bold">Video Editor | Freelance</h5>
-                    <p class="job-desc text-xs md:text-sm mt-2 hidden sm:flex">Took a break from the corporate world to pursue a passion of mine and indulge my creativity. Worked with multiple large brands and production companies, creating bespoke online promotional content for social media and the wider web.</p>
+                    <h5 class="text-md font-bold 2xl:text-2xl">Video Editor | Freelance</h5>
+                    <p class="job-desc text-xs md:text-sm mt-2 hidden sm:flex 2xl:text-xl">Took a break from the corporate world to pursue a passion of mine and indulge my creativity. Worked with multiple large brands and production companies, creating bespoke online promotional content for social media and the wider web.</p>
                 </div>
             </div>
             <div id="job-3" class="md:h-1/3 w-full flex">
                 <div class="h-full w-1/2 pr-4 pt-2">
-                    <p class="date text-right text-base">May 2021 - Mar 2022</p>
+                    <p class="date text-right text-base 2xl:text-2xl">May 2021 - Mar 2022</p>
                 </div>
                 <div class="h-full w-2/3 md:w-1/2 pl-4 pt-2 pr-6">
-                    <h5 class="text-md font-bold">Risk Trend Analyst | TikTok</h5>
-                    <p class="job-desc text-xs md:text-sm mt-2 font-normal hidden sm:flex">Analysed large datasets, identified performance trends, delivered actionable insights and developed process improvements in a high-pressure start-up environment. Acted as Project Manager on two major global projects.</p>
+                    <h5 class="text-md font-bold 2xl:text-2xl">Risk Trend Analyst | TikTok</h5>
+                    <p class="job-desc text-xs md:text-sm mt-2 hidden sm:flex 2xl:text-xl">Analysed large datasets, identified performance trends, delivered actionable insights and developed process improvements in a high-pressure start-up environment. Acted as Project Manager on two major global projects.</p>
                 </div>
             </div>
-            <div id="job-4" class="h-1/3 w-full flex lg:hidden">
+            <div id="job-4" class="h-1/3 w-full flex sm:hidden">
                 <div class="h-full w-1/2 pr-4 pt-2">
-                    <p class="date text-right text-base">May 2021 - Mar 2022</p>
+                    <p class="date text-right text-base">May 2018 - Oct 2020</p>
                 </div>
                 <div class="h-full w-2/3 md:w-1/2 pl-4 pt-2 pr-6">
                     <h5 class="text-md font-bold">AML Analyst | Royal Bank of Canada</h5>
@@ -509,27 +522,27 @@
                 </div>
             </div>
         </div>
-        <a href="https://docs.google.com/document/d/133WtL3RwKI-xd0qoavboO1eAPOtNuTJY/edit" target="_blank"><button id="cv-btn" class="cv-btn text-xs border h-10 w-44 rounded-lg absolute p-2 bottom-5 left-5 hover:bg-white hover:text-black">Download Full CV</button></a>
+        <a href="https://docs.google.com/document/d/133WtL3RwKI-xd0qoavboO1eAPOtNuTJY/edit" target="_blank"><button id="cv-btn" class="cv-btn text-xs border h-10 w-44 rounded-lg absolute p-2 bottom-5 left-5 xl:left-10 hover:bg-white hover:text-black">Download Full CV</button></a>
     </section>
 
     <section id="form" class="w-screen md:h-screen pt-20 pb-28 text-white relative">
-        <h2 class="title text-center text-5xl px-2">FANCY A PINT?</h2>
+        <h2 class="title text-center text-5xl px-2 2xl:text-7xl">FANCY A PINT?</h2>
         <div class="flex flex-col lg:flex-row items-center h-full md:mt-10 mx-auto">
-            <div class="sm:w-2/5 lg:h-4/5 lg:ml-20 p-5 text-white">
-                <h3 id="chat" class="md:text-2xl lg:text-xl text-center pt-10">SEND ME AN EMAIL AND LET'S CHAT, OR LEARN MORE ABOUT ME USING THE LINKS BELOW.</h3>
-                <div class="flex mt-5 gap-5 justify-center">
+            <div class="sm:w-2/5 lg:h-4/5 lg:ml-20 2xl:ml-44 p-5 text-white">
+                <h3 id="chat" class="md:text-2xl lg:text-xl 2xl:text-5xl text-center pt-10 2xl:pt-32">SEND ME AN EMAIL AND LET'S CHAT, OR LEARN MORE ABOUT ME USING THE LINKS BELOW.</h3>
+                <div class="flex mt-5 xl:mt-10 gap-5 justify-center">
                     <a href="https://github.com/pedraamchamsaz" target="_blank"><img src="Github.jpg" class="h-16 w-16 rounded-xl"></a>
                     <a href="https://www.linkedin.com/in/pedraam-chamsaz-459009236/" target="_blank"><img src="LinkedIn Logo.png" class="h-16 w-16"></a>
                 </div> 
             </div>
             <form action="https://formspree.io/f/xpzvrjgk" method='POST' class="flex flex-col gap-3 w-full items-center text-white pt-8 md:pt-20 lg:pt-10 md:mt-0">
-                <label for='name' class="form-labels">NAME</label>
-                <input name="name" type="text" class="sm:w-96 rounded-lg bg-slate-300 text-black border-4 opacity-80 hover:opacity-100" required>
-                <label for='email' class="form-labels">EMAIL</label>
-                <input name="email" type="text" class="sm:w-96 rounded-lg bg-slate-300 text-black border-4 opacity-80 hover:opacity-100" required>
-                <label for="message" class="form-labels">MESSAGE</label>
-                <textarea name="message" rows=4 cols=20 class="sm:w-96 h-28 rounded-lg bg-slate-300 text-black border-4 opacity-80 hover:opacity-100"></textarea>
-                <button type="submit" id="form-btn" class="cv-btn text-xs border rounded-lg hover:bg-white hover:text-black p-3 mt-2">Send</button>
+                <label for='name' class="form-labels 2xl:text-2xl">NAME</label>
+                <input name="name" type="text" class="w-72 sm:w-96 2xl:w-1/2 rounded-lg bg-slate-300 text-black border-4 opacity-80 hover:opacity-100" required>
+                <label for='email' class="form-labels 2xl:xl:text-2xl">EMAIL</label>
+                <input name="email" type="text" class="w-72 sm:w-96 2xl:w-1/2 rounded-lg bg-slate-300 text-black border-4 opacity-80 hover:opacity-100" required>
+                <label for="message" class="form-labels 2xl:text-2xl">MESSAGE</label>
+                <textarea name="message" rows=4 cols=20 class="w-72 sm:w-96 2xl:w-1/2 h-28 rounded-lg bg-slate-300 text-black border-4 opacity-80 hover:opacity-100"></textarea>
+                <button type="submit" id="form-btn" class="cv-btn text-xs 2xl:text-xl border rounded-lg hover:bg-white hover:text-black p-3 mt-2">Send</button>
             </form>
         </div>
     </section>
