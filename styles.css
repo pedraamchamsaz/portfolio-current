@@ -114,7 +114,7 @@ li:hover {
     line-height: 1.75rem;
 } */
 
-.project, .lang-btn, h5, .date {
+.project, .lang-btn, h5, h3, .date {
     font-family: "Hatchway", "Audiowide";
     font-weight: 700;
 }
@@ -159,12 +159,12 @@ padding: 20px;
 }
 
 
-#carouselDiv {
+/* #carouselDiv {
     transition: width 0.5s ease-in-out;
   }
 #carouselDiv:hover {
     width: 500px;
-  }
+  } */
 
 h5 {
     transition: opacity 0.5s ease-in-out;
